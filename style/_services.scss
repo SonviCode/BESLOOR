@@ -1,0 +1,82 @@
+.services {
+    text-align: center;
+    background-color: white;
+    color: rgb(61, 60, 60);
+    padding: 50px 0;
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 25px;
+        justify-items: center;
+        padding: 60px 0;
+        text-align: start;
+        // ---------------------------------Icone------------------
+        i {
+            font-size: 30px;
+            color: rgb(61, 60, 60);
+        }
+        
+        .icon-box {
+            padding-right: 10px;
+        }
+        
+        .small-container {
+            display: flex;
+            flex-direction: row;
+        
+            h3 {     
+                margin-bottom: 20px;
+            }
+        
+            p {   
+                margin-bottom: 20px;
+            }
+        
+            a {
+                text-decoration: none;
+                color: rgb(61, 60, 60);
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+    // -----------------------------Contenu-----------------------
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 20px;
+        position: relative;
+    
+        &::after {
+            content: "";
+            height: 5px;
+            width: 60px;
+            border-radius: 2px;
+            background-color: orange;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+
+
+
+// ----------------------------Boutton--------------------
+.big-btn {
+    background: orange;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}

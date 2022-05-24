@@ -1,0 +1,97 @@
+section.notes {
+    text-align: center;
+    background: url(../image/red-blue.jpg);
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap:50px;
+        justify-items: center;
+        text-align: start;
+        margin: 70px 0;
+
+        // ---------------------------------Icone------------------
+        i {
+            font-size: 4vw;
+        }
+
+        .icon-box {
+            padding: 0 10px;
+        }
+
+        // -----------------------------Contenu-----------------------
+        
+        
+
+        .small-container {
+            
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            p {
+                font-size: clamp(0.7rem, 2vw, 15px);
+            }
+
+
+            .contenu-box {
+                background-color: #000e1dbb;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #000e1dbb;
+                    clip-path: polygon(100% 0%, 50% 50%, 0 0%) ;
+                    top: 100%;
+                    left: 7%;
+                    
+                }
+
+            }
+
+            i {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                opacity: 0.3;
+            }
+
+            .user-info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 10px;
+
+                img {
+                    max-width: 50px;
+                    border-radius: 50px;
+                    margin-right: 20px;
+                }
+
+                p {
+                    font-style: italic;
+                    
+                }
+            }
+        }
+
+    }
+
+    // ----------------------------Boutton--------------------
+    .big-btn {
+        background: orange;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+}

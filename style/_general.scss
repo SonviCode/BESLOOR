@@ -1,0 +1,28 @@
+* ,::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    
+    font-family: 'Poppins';
+}

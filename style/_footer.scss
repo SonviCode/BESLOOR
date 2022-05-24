@@ -1,0 +1,197 @@
+footer {
+    background-color: #1A1814;
+
+    hr {
+        opacity: 0.5;
+    }
+
+    .info-footer-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+
+        h2 {
+            margin: 50px 0 30px;
+            color: white;
+        }
+
+        .nav-footer {
+            margin-bottom: 15px;
+
+            .list-footer {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                li {
+                
+                    list-style: none;
+                    text-transform: uppercase;
+
+                    i {
+                        &:hover {
+                            color: white;
+                        }
+                    }
+
+                    a {
+                        color: orange;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: white;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 550px) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+
+    }
+
+    .info-footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+
+        grid-gap: 50px;
+        justify-content: center;
+        padding: 50px 0 100px;
+
+        h4 {
+            font-size: 20px;
+            padding-bottom: 40px;
+            color: white;
+        }
+
+
+        i {
+            padding: 4px 20px 0 0;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .contact {
+
+            .location,
+            .call,
+            .mail {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 10px;
+
+            }
+
+            .social-network {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 20px;
+                
+                
+                i {
+                    background-color: #292929;
+                    padding: 10px;
+                    transition: 0.4s;
+                    &:hover {
+                        background-color: white;
+                        color: #292929;
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+
+        .email {
+            p {
+                margin-bottom: 20px;
+            }
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                .field {
+                    background-color: #292929;
+                    color: #676767;
+                    outline: none;
+                    padding: 10px;
+                    border: none;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        background-color: #3f3f3f;
+                        color: #acacacce;
+                    }
+
+                    &:focus {
+                        background-color: #acacacce;
+                        border: 2px solid #e9e9e9;
+                        color: #3f3f3f;
+                    }
+                }
+
+                #btn {
+                    padding: 10px 15px;
+                    color: white;
+                    border-radius: 0;
+                    border: none;
+                    background-color: orange;
+                    cursor: pointer;
+                    width: min-content;
+
+                }
+            }
+
+        }
+
+        .texte {
+            hr {
+                margin: 10px 0;
+            }
+        }
+
+        .photos {
+            .container-grid-footer {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                justify-content: center;
+
+                img {
+                    max-width: 70px;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    .mentions-legales {
+        background-color: #292929;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 10%;
+        color: #E2E2E2;
+        gap: 20px;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
+}

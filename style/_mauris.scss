@@ -1,0 +1,109 @@
+.img-background {
+    background: url(../image/night.jpg);
+    background-position:center;
+    background-size: cover;
+    color: black;
+
+    @media screen and (max-width: 600px) {
+        background: none;
+    }
+
+    .imagePetitEcran {
+        @media screen and (max-width: 600px) {
+            background: url(../image/night.jpg);
+            width: 100%;
+            height: 200px;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    
+    .content {
+        background-color:white;
+        width: 60%;  
+        
+        padding:  30px 20px ;
+
+        @media screen and (max-width: 800px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+    
+    content p {
+        font-size: 0.5rem;
+    }
+    
+    h1 {
+        position: relative;
+        margin-bottom: 25px;
+        font-size: clamp(20px, 3vw, 50px);
+    }
+    
+    h1::after {
+        content: "";
+        height: 5px;
+        width: 60px;
+        border-radius: 2px;
+        background-color: orange;
+        position: absolute;
+        bottom: -10px;
+        left: 1px;
+    }
+}
+
+
+.border-icon {
+    border: 1px solid rgba(141, 140, 140, 0.336);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+i {
+    color: orange;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+    
+
+    h2 {
+        padding-top: 5px;
+        font-size: clamp(15px, 3vw, 30px);
+    }
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+
+
+// @media screen and (max-width: 800px) {
+//     .content {
+
+//         width: 400px;
+//     }
+// }
+
+// @media screen and (max-width: 500px) {
+//     .content {
+
+//         width: 300px;
+//     }
+// }
